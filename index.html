@@ -1,0 +1,772 @@
+<!--
+Use CTRL + F + ENTER to find the following sections in the code:
+
+=== Page Index ===
+Section: Categories
+Section: Products
+Section: Search Products
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NextGen PC Supplies Store</title>
+        <meta name="description" content="NextGen PC Supplies Store - Your one-stop shop for all computer supplies.">
+        <meta name="keywords" content="PC Supplies, Computer Accessories, NextGen Store">
+        <meta name="author" content="NextGen Team">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="assets/cpu-fill.svg"
+            type="image/x-icon">
+
+        <!-- External CSS Files -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <nav
+                class="navbar navbar-expand-lg navbar-modern shadow-lg px-0 py-2 position-relative"
+                style="margin:0 !important; border-radius:0; background:linear-gradient(90deg, #fff 0%, #fff 40%, #3F0E75 100%);">
+                <div class="container-fluid">
+                    <a
+                        class="navbar-brand d-flex align-items-center gap-2 fw-bold fs-4"
+                        href="#"
+                        style="background:#fff; border-radius:12px; padding:4px 16px; box-shadow:0 2px 8px rgba(63,14,117,0.10); color:#3F0E75 !important; text-shadow:none;">
+                        <img src="assets/logo Rect.JPG" class="nav-logo me-2"
+                            alt="NextGen Logo"
+                            style="background:#fff; border-radius:12px; box-shadow:none;">
+                        NextGen
+                    </a>
+                    <button class="navbar-toggler border-0" type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="offcanvas offcanvas-end glassmorph align-items-center justify-content-start"
+                        tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div
+                            class="offcanvas-header w-100 bg-transparent border-bottom-0">
+                            <h5 class="offcanvas-title fw-bold text-gradient"
+                                id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul
+                                class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3 align-items-lg-center">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active d-flex align-items-center gap-1"
+                                        aria-current="page" href="#"><i
+                                            class="fas fa-home"></i> Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link d-flex align-items-center gap-1"
+                                        href="#ContactUs"><i
+                                            class="fas fa-envelope"></i> Contact
+                                        Us</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle d-flex align-items-center gap-1"
+                                        href="#" id="navbarDropdown"
+                                        role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="fas fa-th-large"></i>
+                                        Categories
+                                    </a>
+                                    <ul
+                                        class="dropdown-menu shadow-lg rounded-3 border-0 mt-2"
+                                        aria-labelledby="navbarDropdown">
+                                        <li><a
+                                                class="dropdown-item d-flex align-items-center gap-2"
+                                                href="#"><i
+                                                    class="fas fa-desktop"></i>
+                                                DeskTop</a></li>
+                                        <li><a
+                                                class="dropdown-item d-flex align-items-center gap-2"
+                                                href="#"><i
+                                                    class="fas fa-laptop"></i>
+                                                LabTop</a></li>
+                                        <li><a
+                                                class="dropdown-item d-flex align-items-center gap-2"
+                                                href="#"><i
+                                                    class="fas fa-microchip"></i>
+                                                PC Components</a></li>
+                                        <li><a
+                                                class="dropdown-item d-flex align-items-center gap-2"
+                                                href="#"><i
+                                                    class="fas fa-tv"></i>
+                                                Monitor</a></li>
+                                        <li><a
+                                                class="dropdown-item d-flex align-items-center gap-2"
+                                                href="#"><i
+                                                    class="fas fa-mobile-alt"></i>
+                                                Mobile & Tablets</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link d-flex align-items-center gap-1"
+                                        href="#"><i class="fas fa-tags"></i>
+                                        Offers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link d-flex align-items-center gap-1"
+                                        href="#"><i class="fas fa-headset"></i>
+                                        Support</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex my-4 my-lg-0 ms-lg-4"
+                                role="search">
+                                <input
+                                    class="form-control me-2 rounded-pill shadow-sm"
+                                    type="search"
+                                    placeholder="Search products..."
+                                    aria-label="Search">
+                                <button
+                                    class="btn btn-gradient rounded-pill px-4"
+                                    type="submit"><i
+                                        class="fas fa-search"></i></button>
+                            </form>
+                            <a href="#"
+                                class="btn btn-cart position-relative ms-lg-3"><i
+                                    class="bi bi-cart3 fs-4 text-warning"></i><span
+                                    class="cart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">2</span></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- =====================Main==================== -->
+
+        <main>
+            <!-- Section: Main Slider -->
+            <section id="hero" class="hero" data-aos="fade-up"
+                data-aos-delay="50" data-aos-duration="400"
+                data-aos-easing="ease-out-cubic">
+                <div class="container-fluid horiz-menu">
+                    <div
+                        class="container d-flex justify-content-center align-items-center">
+                        <div class="dd-menu1 ">
+                            <a class="nav-link1" href="#">
+                                <span>Categories</span> <i
+                                    class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown1 dd">
+                                <li><a href="#">DeskTop</a></li>
+                                <li><a href="#">LabTop</a></li>
+                                <li class="dd-menu2"><a href="#">PC
+                                        Components
+                                        <i class="bi bi-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown2 dd">
+                                        <li><a href="#">Motherboard
+                                                <img
+                                                    src="assets/CompuScience/Motherboards.jpg"
+                                                    alt>
+                                            </a></li>
+                                        <li><a href="#">Computer Case<img
+                                                    src="assets/CompuScience/Computer Cases.jpg"
+                                                    alt></a></li>
+                                        <li><a href="#">RAM<img
+                                                    src="assets/CompuScience/RAMs.jpg"
+                                                    alt></a></li>
+                                        <li><a href="#">VGA<img
+                                                    src="assets/CompuScience/VGAs.jpg"
+                                                    alt></a></li>
+                                        <li><a href="#">Processors<img
+                                                    src="assets/CompuScience/Processors.jpg"
+                                                    alt></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Monitor</a></li>
+                                <li><a href="#">Mobile & Tablets</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a class="nav-link1" href="#">About Us</a>
+                        </div>
+                        <div>
+                            <a class="nav-link1" href="#">Store Location</a>
+                        </div>
+                        <div>
+                            <a class="nav-link1" href="#">Offers</a>
+                        </div>
+                        <div>
+                            <a class="nav-link1" href="#">Support</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img
+                                src="assets/CompuScience/MainSlider1.png"
+                                alt></div>
+                        <div class="swiper-slide"><img
+                                src="assets/CompuScience/MainSlider2.png"
+                                alt></div>
+                        <div class="swiper-slide"><img
+                                src="assets/CompuScience/MainSlider3.png"
+                                alt></div>
+                        <div class="swiper-slide"><img
+                                src="assets/CompuScience/MainSlider4.png"
+                                alt></div>
+                        <div class="swiper-slide"><img
+                                src="assets/CompuScience/MainSlider5.png"
+                                alt></div>
+                        <div class="swiper-slide"><img
+                                src="assets/CompuScience/MainSlider6.png"
+                                alt></div>
+                        <div class="swiper-slide"><img
+                                src="assets/CompuScience/MainSlider7.png"
+                                alt></div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination main-swiper-pagination"></div>
+                    <div class="autoplay-progress">
+                        <svg viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="20"></circle>
+                        </svg>
+                        <span></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Categories -->
+            <section id="categories-slider" class="bg-white my-5"
+                data-aos="fade-up" data-aos-delay="100" data-aos-duration="400"
+                data-aos-anchor-placement="top-bottom">
+                <h2>Categories</h2>
+                <div class="swiper  categories-swiper w-100">
+                    <div class="swiper-wrapper text-center">
+                        <div class="swiper-slide"><img
+                                src="assets/Sigma/Accessories.png" alt>
+
+                            <p>Accessories</p></div>
+                        <div class="swiper-slide"><img
+                                src="assets/Sigma/bundles.png" alt>
+                            <p>
+                                Bundles
+                            </p>
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="assets/Sigma/Desktoop.png" alt>
+                            <p>
+                                DeskTop
+                            </p>
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="assets/Sigma/Monitors.png" alt>
+                            <p>
+                                Monitors
+                            </p>
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="assets/Sigma/Tools.png" alt>
+                            <p>
+                                Tools
+                            </p>
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="assets/Sigma/Printer Ink and Toner.png"
+                                alt><p>
+                                Printer Ink and Toner
+                            </p>
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="assets/Sigma/Strorage.png" alt>
+                            <p>
+                                Storage
+                            </p>
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="assets/Sigma/POS devices.png" alt>
+                            <p>
+                                POS Systems
+                            </p>
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="assets/Sigma/Network.png" alt>
+                            <p>
+                                Network
+                            </p>
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="assets/Sigma/Powered by ASUS.png"
+                                alt>
+                            <p>
+                                Powered by ASUS
+                            </p>
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="assets/Sigma/tablets.png" alt>
+                            <p>
+                                Tablets
+                            </p>
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="assets/Sigma/gaming consoles.png"
+                                alt>
+                            <p>
+                                Gaming Consoles
+                            </p>
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="assets/Sigma/software.png" alt>
+                            <p>
+                                Software
+                            </p>
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="assets/Sigma/mobileAccessories.png"
+                                alt>
+                            <p>
+                                Mobile Accessories
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div
+                        class="swiper-pagination categories-swiper-pagination"></div>
+                </section>
+
+                <!-- ---------------------Mobile Menu Section--------------------- -->
+                <!-- Section: Mobile Menu -->
+                <section id="mobile-menu" class="py-5" data-aos="fade-up"
+                    data-aos-delay="150" data-aos-duration="400"
+                    data-aos-offset="50">
+                    <div class="container-fluid">
+                        <div class="row fixed-bottom bg-body-tertiary">
+                            <ul
+                                class="d-flex justify-content-around align-items-center">
+                                <li>
+                                    <a data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasNavbar"
+                                        aria-controls="offcanvasNavbar"
+                                        aria-label="Toggle Offcanvas">
+                                        <i class="fa-solid fa-bars "></i>
+                                        <span>
+                                            Menu
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i
+                                            class="fa-solid fa-magnifying-glass"></i>
+                                        <span>
+                                            Search
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i class="fa-solid fa-user"></i>
+                                        <span>
+                                            Profile
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i
+                                            class="fa-solid fa-cart-shopping"></i>
+                                        <span>
+                                            Cart
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ---------------------Services Section--------------------- -->
+                <!-- Section: Services -->
+                <section id="services" class="bg-dark py-5 my-4"
+                    data-aos="fade-up" data-aos-delay="200"
+                    data-aos-duration="400"
+                    data-aos-anchor-placement="center-bottom">
+                    <div class="container">
+                        <div class="row g-4 ">
+
+                            <div class="col-md-4 text-center">
+                                <i
+                                    class="fas fa-shield-alt service-icon text-primary"></i>
+                                <h4>PRIVACY POLICY</h4>
+                                <p class="mb-0 ">Your data security is our
+                                    priority</p>
+                            </div>
+
+                            <div class="col-md-4 text-center">
+                                <i
+                                    class="fas fa-exchange-alt service-icon text-primary"></i>
+                                <h4>30 DAYS RETURN</h4>
+                                <p class="mb-0">Hassle-free return policy</p>
+                            </div>
+
+                            <div class="col-md-4 text-center">
+                                <i
+                                    class="fas fa-store service-icon text-primary"></i>
+                                <h4>OUR STORES</h4>
+                                <p class="mb-0">Open from 10:00 AM to 10:00
+                                    PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ---------------------Banner Images Section--------------------- -->
+                <!-- Section: Banner Images -->
+                <section id="banner" class="container my-5"
+                    data-aos="zoom-in-up" data-aos-delay="250"
+                    data-aos-duration="1200">
+                    <div class="row">
+                        <div class="col-md-6 col-12 mb-1">
+                            <figure>
+
+                                <img
+                                    src="assets/PC COMPONENTS WEB PANNER-min.jpg"
+                                    class="img-fluid hover-effect"
+                                    alt="Image 1">
+                            </figure>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <figure>
+
+                                <img src="assets/ORIGINAL PC WEB PANNER.jpg"
+                                    class="img-fluid hover-effect"
+                                    alt="Image 2">
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+                <!-- ---------------------Counter Section--------------------- -->
+                <!-- Section: Counter -->
+                <section id="counter" class="py-5" style="background:#f5f5f5;"
+                    data-aos="fade-up" data-aos-delay="300"
+                    data-aos-duration="900"
+                    data-aos-anchor-placement="top-bottom">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-md-10 text-center">
+                                <h2 class="mb-4">Limited Time Offer</h2>
+                                <div
+                                    class="countdown-timer d-flex justify-content-center flex-wrap">
+                                    <div class="timer-segment mx-3 text-center">
+                                        <div
+                                            class="timer-number display-4 fw-bold"
+                                            id="days">00</div>
+                                        <div class="timer-label">Days</div>
+                                    </div>
+                                    <div class="timer-segment mx-3 text-center">
+                                        <div
+                                            class="timer-number display-4 fw-bold"
+                                            id="hours">00</div>
+                                        <div class="timer-label">Hours</div>
+                                    </div>
+                                    <div class="timer-segment mx-3 text-center">
+                                        <div
+                                            class="timer-number display-4 fw-bold"
+                                            id="minutes">00</div>
+                                        <div class="timer-label">Minutes</div>
+                                    </div>
+                                    <div class="timer-segment mx-3 text-center">
+                                        <div
+                                            class="timer-number display-4 fw-bold"
+                                            id="seconds">00</div>
+                                        <div class="timer-label">Seconds</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ---------------------Testimonials Section--------------------- -->
+                <!-- Section: Testimonials -->
+                <section id="testimonials" class="py-5 bg-gradient-primary"
+                    data-aos="fade-up" data-aos-delay="350"
+                    data-aos-duration="1000"
+                    data-aos-anchor-placement="center-bottom">
+                    <div class="container position-relative">
+                        <h2 class="text-center mb-5 text-white fw-bold">What Our
+                            Customers Say</h2>
+                        <div
+                            class="row justify-content-center align-items-center">
+                            <div class="col-md-4 mb-4">
+                                <div
+                                    class="card shadow-lg border-0 bg-white testimonial-card">
+                                    <div class="card-body text-center">
+                                        <img
+                                            src="https://randomuser.me/api/portraits/men/44.jpg"
+                                            class="rounded-circle mb-3 shadow"
+                                            width="80" height="80"
+                                            alt="Omar Khaled">
+                                        <p
+                                            class="card-text">"Thank you for your cooperation and amazing after sales service, it won't be the last time. Good luck!"</p>
+                                        <h6 class="fw-bold mb-0">Omar
+                                            Khaled</h6>
+                                        <span class="text-muted small">Cairo,
+                                            Egypt</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div
+                                    class="card shadow-lg border-0 bg-white testimonial-card">
+                                    <div class="card-body text-center">
+                                        <img
+                                            src="https://randomuser.me/api/portraits/men/32.jpg"
+                                            class="rounded-circle mb-3 shadow"
+                                            width="80" height="80"
+                                            alt="Amr Hashem">
+                                        <p
+                                            class="card-text">"These guys really are the best. Mohamed the owner is awesome and very knowledgeable, he helped me a lot for several years. Highly recommended!"</p>
+                                        <h6 class="fw-bold mb-0">Amr Hashem</h6>
+                                        <span
+                                            class="text-muted small">Alexandria,
+                                            Egypt</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div
+                                    class="card shadow-lg border-0 bg-white testimonial-card">
+                                    <div class="card-body text-center">
+                                        <img
+                                            src="https://randomuser.me/api/portraits/men/45.jpg"
+                                            class="rounded-circle mb-3 shadow"
+                                            width="80" height="80"
+                                            alt="Ahmed Kamal">
+                                        <p
+                                            class="card-text">"The best if you want PC parts and all accessories. Fast delivery and great support!"</p>
+                                        <h6 class="fw-bold mb-0">Ahmed
+                                            Kamal</h6>
+                                        <span class="text-muted small">Giza,
+                                            Egypt</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ---------------------Contact Us Section--------------------- -->
+                <!-- Section: Contact Us -->
+                <section id="ContactUs" class="py-5 bg-light" data-aos="fade-up"
+                    data-aos-delay="400" data-aos-duration="400"
+                    data-aos-anchor-placement="top-bottom">
+                    <div class="container">
+                        <div
+                            class="row justify-content-center align-items-center">
+                            <div class="col-lg-5 mb-4 mb-lg-0">
+                                <div
+                                    class="contact-info-card h-100 p-4 d-flex flex-column justify-content-center align-items-start shadow rounded-4 bg-white">
+                                    <h3 class="fw-bold mb-3 text-primary"><i
+                                            class="fas fa-map-marker-alt me-2"></i>Contact
+                                        Information</h3>
+                                    <ul class="list-unstyled mb-4">
+                                        <li class="mb-3"><i
+                                                class="fas fa-user me-2 text-secondary"></i>
+                                            NextGen PC Supplies</li>
+                                        <li class="mb-3"><i
+                                                class="fas fa-map-marker-alt me-2 text-secondary"></i>
+                                            123 Main St, Cairo, Egypt</li>
+                                        <li class="mb-3"><i
+                                                class="fas fa-phone me-2 text-secondary"></i>
+                                            +20 100 123 4567</li>
+                                        <li class="mb-3"><i
+                                                class="fas fa-envelope me-2 text-secondary"></i>
+                                            info@nextgenpc.com</li>
+                                        <li class="mb-3"><i
+                                                class="fas fa-clock me-2 text-secondary"></i>
+                                            Mon - Sat: 10:00 - 22:00</li>
+                                    </ul>
+                                    <!-- Google Maps Embed -->
+                                    <div
+                                        class="google-maps-embed rounded-3 overflow-hidden mb-2 w-100"
+                                        style="height:220px;">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.010073289889!2d31.23571131511541!3d30.0444199818797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145841f6e4b0b0b1%3A0x2e2b2b2b2b2b2b2b!2s123%20Main%20St%2C%20Cairo%2C%20Egypt!5e0!3m2!1sen!2seg!4v1685555555555!5m2!1sen!2seg"
+                                            width="100%" height="100%"
+                                            style="border:0;" allowfullscreen
+                                            loading="lazy"
+                                            title="NextGen PC Supplies Store Location in Cairo"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <form
+                                    class="contact-form p-4 rounded-4 shadow bg-white">
+                                    <h2
+                                        class="text-center mb-4 fw-bold text-primary">Contact
+                                        Us</h2>
+                                    <div
+                                        class="form-floating mb-3 position-relative">
+                                        <input type="text"
+                                            class="form-control ps-5" id="name"
+                                            placeholder="Your Name" required>
+                                        <label for="name"><i
+                                                class="fas fa-user me-2"></i>Name</label>
+                                    </div>
+                                    <div
+                                        class="form-floating mb-3 position-relative">
+                                        <input type="email"
+                                            class="form-control ps-5" id="email"
+                                            placeholder="name@example.com"
+                                            required>
+                                        <label for="email"><i
+                                                class="fas fa-envelope me-2"></i>Email
+                                            address</label>
+                                    </div>
+                                    <div
+                                        class="form-floating mb-3 position-relative">
+                                        <input type="text"
+                                            class="form-control ps-5"
+                                            id="subject" placeholder="Subject"
+                                            required>
+                                        <label for="subject"><i
+                                                class="fas fa-tag me-2"></i>Subject</label>
+                                    </div>
+                                    <div
+                                        class="form-floating mb-4 position-relative">
+                                        <textarea class="form-control ps-5"
+                                            placeholder="Your message"
+                                            id="message" style="height: 120px"
+                                            required></textarea>
+                                        <label for="message"><i
+                                                class="fas fa-comment-dots me-2"></i>Message</label>
+                                    </div>
+                                    <div id="contact-status" class="mb-3"
+                                        style="display:none;"></div>
+                                    <div class="d-grid">
+                                        <button type="submit"
+                                            class="btn btn-primary btn-lg rounded-pill shadow-sm"><i
+                                                class="fas fa-paper-plane me-2"></i>Send
+                                            Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- =========================Footer==================-->
+            <footer
+                class="footer-modern text-white pt-5 pb-0 bg-gradient-footer position-relative overflow-hidden">
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <h5 class="fw-bold mb-3">About NextGen</h5>
+                            <p class="small text-white"
+                                style="color:#fff;opacity:0.95;">NextGen PC
+                                Supplies is your trusted partner for all
+                                computer hardware, accessories, and tech
+                                support. We deliver quality, value, and service
+                                to every customer.</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <a href="#" class="text-white fs-4 me-3"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="text-white fs-4 me-3"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="#" class="text-white fs-4 me-3"><i
+                                        class="fab fa-github"></i></a>
+                                <a href="#" class="text-white fs-4"><i
+                                        class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 mb-4 mb-md-0">
+                            <h5 class="fw-bold mb-3">Quick Links</h5>
+                            <ul class="list-unstyled small">
+                                <li><a href="#"
+                                        class="text-white-50">Home</a></li>
+                                <li><a href="#"
+                                        class="text-white-50">Shop</a></li>
+                                <li><a href="#"
+                                        class="text-white-50">Offers</a></li>
+                                <li><a href="#"
+                                        class="text-white-50">Support</a></li>
+                                <li><a href="#ContactUs"
+                                        class="text-white-50">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 mb-4 mb-md-0">
+                            <h5 class="fw-bold mb-3">Contact Info</h5>
+                            <ul class="list-unstyled small">
+                                <li><i class="fas fa-map-marker-alt me-2"></i>
+                                    123 Main St, Cairo, Egypt</li>
+                                <li><i class="fas fa-phone me-2"></i> +20 100
+                                    123 4567</li>
+                                <li><i class="fas fa-envelope me-2"></i>
+                                    info@nextgenpc.com</li>
+                                <li><i class="fas fa-clock me-2"></i> Mon - Sat:
+                                    10:00 - 22:00</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h5 class="fw-bold mb-3">Newsletter</h5>
+                            <form class="d-flex flex-column flex-sm-row gap-2">
+                                <input type="email"
+                                    class="form-control rounded-pill"
+                                    placeholder="Your email" required>
+                                <button
+                                    class="btn btn-primary rounded-pill px-4"
+                                    type="submit">Subscribe</button>
+                            </form>
+                            <p class="small mt-3 text-white-50">Get the latest
+                                updates and offers.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="row border-top border-light pt-3 pb-2 align-items-center">
+                        <div
+                            class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                            <small class="text-white-50">&copy; 2025 NextGen PC
+                                Supplies. All rights reserved.</small>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <a href="#" class="text-white-50 me-3">Privacy
+                                Policy</a>
+                            <a href="#" class="text-white-50">Terms of
+                                Service</a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="footer-effect position-absolute top-0 start-0 w-100 h-100"
+                    style="pointer-events:none;z-index:0;"></div>
+            </footer>
+            <script
+                src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script src="js/bootstrap.bundle.min.js"></script>
+            <script src="js/all.min.js"></script>
+            <script src="js/main.js"></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+            <script>AOS.init({ once: true, duration: 400, easing: 'ease-out-cubic' });</script>
+        </body>
+    </html>
